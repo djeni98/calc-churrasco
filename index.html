@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Calculadora de Churrasco</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="calcula()">
+        <header class="container-fluid bg-black">
+            <div class="container text-center">
+                <h1>Calculadora de Churrasco</h1>
+            </div>
+        </header>
+        <main class="container">
+<!--
+            <h2 class="mt-5 mb-5">Calcule a quantidade de recursos necessários para o seu
+                   churrasco!</h2>
+-->
+            <section class="mt-5 mb-2">
+                <article class="row justify-content-around align-items-center">
+                    <div class="col-sm-6 row justify-content-between">
+                        <p class="text-left">Carnívoros</p>
+                        <p class="text-right" id="q_carnivoros">0</p>
+                    </div>
+                    <button class="col-sm-2 btn bg-green mr-3 ml-3 mb-2" onclick="adiciona('q_carnivoros')">+</button>
+                    <button class="col-sm-2 btn bg-green mr-3 ml-3 mb-2" onclick="diminui('q_carnivoros')" >-</button>
+                </article>
+            </section>
+            <section class="mb-2">
+                <article class="row justify-content-around align-items-center">
+                    <div class="col-sm-6 row justify-content-between">
+                        <p class="text-left">Vegetarianos</p>
+                        <p class="text-right" id="q_vegetarianos">0</p>
+                    </div>
+                    <button class="col-sm-2 btn bg-green mr-3 ml-3 mb-2" onclick="adiciona('q_vegetarianos')">+</button>
+                    <button class="col-sm-2 btn bg-green mr-3 ml-3 mb-2" onclick="diminui('q_vegetarianos')" >-</button>
+                </article>
+            </section>
+            <section class="mb-2">
+                <article class="row justify-content-around align-items-center">
+                    <div class="col-sm-6 row justify-content-between">
+                        <p class="text-left">Horas</p>
+                        <p class="text-right" id="q_horas">1</p>
+                    </div>
+                    <button class="col-sm-2 btn bg-green mr-3 ml-3 mb-2" onclick="adiciona('q_horas')">+</button>
+                    <button class="col-sm-2 btn bg-green mr-3 ml-3 mb-2" onclick="diminui('q_horas')" >-</button>
+                </article>
+            </section>
+            <hr/>
+            <h2 class="mb-5 text-center"><span class="bg-green pl-1 pr-1">Totais</span></h2>
+            <section>
+                <article class="row justify-content-around align-items-center">
+                    <div class="col-sm-6">
+                        <p>Carne: <span id="t_carne"></span></p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>Vegetais: <span id="t_vegetais"></span></p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>Cerveja: <span id="t_cerveja"></span></p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>Refrigerante: <span id="t_refri"></span></p>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <script src="main.js"></script>
+    </body>
+</html>
